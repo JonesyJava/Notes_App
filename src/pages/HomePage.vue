@@ -1,6 +1,12 @@
 <template>
-  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-
+  <div class="d-flex justify-content-center">
+    <div class="notes">
+      <div class="tools d-flex justify-content-end">
+        <button class="fa fa-pencil"></button>
+         <button class="fa fa-trash"></button>
+      </div>
+        <textarea></textarea>
+    </div>
   </div>
 </template>
 
@@ -11,21 +17,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.home{
-  display: grid;
-  height: 80vh;
-  place-content: center;
-  text-align: center;
-  user-select: none;
-  .home-card{
-    width: 50vw;
-    > img{
-      height: 200px;
-      max-width: 200px;
-      width: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-  }
+.notes{
+  background-color: #fff;
+  flex-wrap:wrap;
+  width: 500px;
+  height: 500px;
+  margin: 20px;
 }
+.notes .tools{
+background-color: #9ec862;
+justify-content: flex-end !important;
+padding: 0.5rem;
+}
+
 </style>

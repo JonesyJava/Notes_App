@@ -25,6 +25,11 @@ export default {
 }
 </script>
 <style lang="scss">
+main{
+  background-color: #7bdaf3;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 @import "./assets/scss/main.scss";
 
 </style>
